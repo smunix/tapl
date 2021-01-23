@@ -1,0 +1,13 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:tapl"
+
+    - path: "app/Main.hs"
+      component: "tapl:exe:tapl-exe"
+
+    - path: "app/Paths_tapl.hs"
+      component: "tapl:exe:tapl-exe"
+
+    - path: "test"
+      component: "tapl:test:tapl-test"
