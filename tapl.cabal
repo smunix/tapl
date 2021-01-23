@@ -27,6 +27,8 @@ library
   exposed-modules:
       Lib
     , Chap03.Sec02.Def03
+    , Chap03.Sec05.Boolean
+    , Chap03.Sec05.Arithmetic
   other-modules:
       Paths_tapl
   hs-source-dirs:
@@ -36,6 +38,8 @@ library
     , containers
     , microlens-platform
   default-language: Haskell2010
+  ghc-options: -ddump-simpl
+              
 
 executable tapl-exe
   main-is: Main.hs
